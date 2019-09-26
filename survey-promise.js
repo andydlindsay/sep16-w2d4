@@ -31,7 +31,9 @@ rlp.questionAsync('What do you think of Node.js? ')
   .then((answer) => {
     answers.push(answer);
     rlp.close();
+
     const [node, name, activity, music, meal, food] = answers;
+    
     console.log();
     console.log(`My name is ${name} and I really like ${activity}! I listen to ${music} while eating ${food} during ${meal}... and I think Node is ${node}!!`);
   });
